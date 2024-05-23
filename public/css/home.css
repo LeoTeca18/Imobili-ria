@@ -1,0 +1,140 @@
+ body {
+     font-family: Arial,
+         sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f0f0f0;
+ }
+
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ header {
+     background-color: #333;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+ }
+
+ .banner {
+     width: 100%;
+     height: 300px;
+     background-image: url('https://via.placeholder.com/1200x300');
+     background-size: cover;
+     background-position: center;
+     margin-bottom: 20px;
+ }
+
+ .property-list {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+
+ .property {
+     width: 300px;
+     margin: 10px;
+     background-color: #fff;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .property img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+ }
+
+ .property .details {
+     padding: 10px;
+ }
+
+ .property .details h2 {
+     margin-top: 0;
+ }
+
+ /* Estilos para o botão laranja */
+ .botao-laranja {
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: orange;
+     color: white;
+     text-decoration: none;
+     border-radius: 5px;
+     transition: background-color 0.3s;
+ }
+
+ .botao-laranja:hover {
+     background-color: darkorange;
+ }
+
+ .text-center {
+     text-align: center;
+ }
+
+ .container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     /* Para centralizar verticalmente */
+ }
+
+ nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ nav ul li {
+     display: inline-block;
+     margin-right: 20px;
+ }
+
+ nav ul li:last-child {
+     margin-right: 0;
+ }
+
+ nav ul li a {
+     color: #fff;
+     text-decoration: none;
+ }
+
+   .link-list a {
+       color: black;
+       text-decoration: none;
+       /* Remove o sublinhado dos links */
+   }
+
+           /* Estilos adicionais para a barra de pesquisa */
+           .search-bar {
+               display: flex;
+               justify-content: center;
+               margin-bottom: 20px;
+           }
+    
+           .search-bar input[type="text"] {
+               width: 300px;
+               padding: 10px;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+           }
+    
+           .search-bar button {
+               padding: 10px 20px;
+               background-color: #4CAF50;
+               color: white;
+               border: none;
+               border-radius: 4px;
+               margin-left: 10px;
+               cursor: pointer;
+           }
+    
+           .search-bar button:hover {
+               background-color: #45a049;
+           }
