@@ -1,0 +1,1 @@
+<?php /**PATH C:\xampp\htdocs\Imobiliaria\resources\views/layouts/gestor.blade.php ENDPATH**/ ?>
