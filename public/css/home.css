@@ -6,29 +6,31 @@
      background-color: #f0f0f0;
  }
 
- .container {
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 20px;
-    margin-top: 20px;
+ .a, .b, .c {
     margin-bottom: 20px;
  }
 
- header {
-     background-color: #333;
-     color: #fff;
-     padding: 20px;
-     text-align: center;
+ .c{
+    margin-top: 20px; /* Espaçamento superior do header */
+            text-align: center;
  }
+  header, .banner, .container {
+            margin-bottom: 20px; /* Espaçamento inferior entre seções */
+        }
 
- .banner {
-     width: 100%;
-     height: 300px;
-     background-image: url('https://via.placeholder.com/1200x300');
-     background-size: cover;
-     background-position: center;
-     margin-bottom: 20px;
- }
+        header {
+            margin-top: 20px; /* Espaçamento superior do header */
+            text-align: center;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            text-align: center;
+        }
 
  .property-list {
      display: flex;
@@ -76,15 +78,6 @@
      text-align: center;
  }
 
- .container {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
-     /* Para centralizar verticalmente */
- }
-
  nav ul {
      list-style: none;
      margin: 0;
@@ -105,12 +98,6 @@
      text-decoration: none;
  }
 
-   .link-list a {
-       color: black;
-       text-decoration: none;
-       /* Remove o sublinhado dos links */
-   }
-
            /* Estilos adicionais para a barra de pesquisa */
            .search-bar {
                display: flex;
@@ -127,7 +114,7 @@
     
            .search-bar button {
                padding: 10px 20px;
-               background-color: #4CAF50;
+               background-color: orange;
                color: white;
                border: none;
                border-radius: 4px;
@@ -136,5 +123,6 @@
            }
     
            .search-bar button:hover {
-               background-color: #45a049;
+               background-color: orange;
            }
+           

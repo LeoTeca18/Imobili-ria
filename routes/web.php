@@ -82,6 +82,14 @@ Route::get('/alugadosN', function () {
     return view('funcionario/negociante/alugados');
 });
 
+Route::get('/reservasN', function () {
+    return view('funcionario/negociante/reservasN');
+});
+
+Route::get('/visitaN', function () {
+    return view('funcionario/negociante/visitasN');
+});
+
 #Gestor-------------------------------------------------------------------
 Route::get('/gestor', function () {
     return view('funcionario/gestor/iniG');
