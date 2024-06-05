@@ -2067,6 +2067,13 @@
         display: none;
         /* Esconde o input padrão */
     }
+
+    .logo {
+        max-width: 100px;
+        /* Define um tamanho máximo para o logotipo */
+        height: auto;
+        /* Mantém a proporção da imagem */
+    }
     </style>
 </head>
 

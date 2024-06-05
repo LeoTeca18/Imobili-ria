@@ -74,7 +74,7 @@
             <div class="therichpost-row-padding" style="margin:0 -16px">
                 <div class="therichpost-twothird">
                     <h5>Imóveis</h5>
-                    <table class="therichpost-table therichpost-striped therichpost-white">
+                    <table class="therichpost-table therichpost-striped therichpost-white" style="width: 900px">
                         <thead>
                             <tr>
                                 <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>

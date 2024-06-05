@@ -70,7 +70,7 @@
             <div class="therichpost-row-padding" style="margin:0 -16px">
                 <div class="therichpost-twothird">
                     <h5>Pedidos</h5>
-                    <table class="therichpost-table therichpost-striped therichpost-white">
+                    <table class="therichpost-table therichpost-striped therichpost-white" style="width: 900px">
                         <tr>
                             <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
                             <td>Leonardo Teca</td>

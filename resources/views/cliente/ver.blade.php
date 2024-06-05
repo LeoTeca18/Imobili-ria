@@ -2,7 +2,7 @@
 @section('estilo')
 <header class="a">
     <a href="cliente">
-        <h1>Imobiliária Imotec</h1>
+        <h1><img src="img/logo.png" class="logo" width="80" height="80">Imobiliária Imotec</h1>
     </a>
     <p>Bem-vindo à nossa imobiliária</p>
     <nav>
