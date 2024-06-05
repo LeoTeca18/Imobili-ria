@@ -1,5 +1,4 @@
 @extends('layouts.main')
-@extends('layouts.gestor')
 @section('estilo')
 
 <!-- Top container -->
@@ -52,7 +51,8 @@
                     <h3>52</h3>
                 </div>
                 <div class="therichpost-clear"></div>
-                <h4><a href="aceites">Pedidos Aceites</h4>
+                <h4><a href="aceites">Pedidos Aceites</a>
+                </h4>
             </div>
         </div>
         <div class="therichpost-quarter">
@@ -62,7 +62,8 @@
                     <h3>99</h3>
                 </div>
                 <div class="therichpost-clear"></div>
-                <h4><a href="negados">Pedidos Negados</h4>
+                <h4><a href="negados">Pedidos Negados</a>
+                </h4>
             </div>
         </div>
         <div class="therichpost-panel">
@@ -72,11 +73,62 @@
                     <table class="therichpost-table therichpost-striped therichpost-white">
                         <tr>
                             <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
-                            <td>New record, over 90 views.</td>
-                            <td><i>10 mins</i></td>
+                            <td>Leonardo Teca</td>
+                            <td><i>922245563</i></td>
+                            <td><i>leoteca@gmail.com</i></td>
                             <td class="button-container">
                                 <button class="therichpost-button therichpost-blue">Validar</button>
-                                <button class="therichpost-button therichpost-blue">Rejeitar</button>
+                                <button class="therichpost-button therichpost-red">Rejeitar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
+                            <td>Ana Silva</td>
+                            <td><i>923456789</i></td>
+                            <td><i>silvana@gmail.com</i></td>
+                            <td class="button-container">
+                                <button class="therichpost-button therichpost-blue">Validar</button>
+                                <button class="therichpost-button therichpost-red">Rejeitar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
+                            <td>Carlos Mendes</td>
+                            <td><i>924567890</i></td>
+                            <td><i>carlos@gmail.com</i></td>
+                            <td class="button-container">
+                                <button class="therichpost-button therichpost-blue">Validar</button>
+                                <button class="therichpost-button therichpost-red">Rejeitar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
+                            <td>Beatriz Costa</td>
+                            <td><i>925678901</i></td>
+                            <td><i>beacosta@gmail.com</i></td>
+                            <td class="button-container">
+                                <button class="therichpost-button therichpost-blue">Validar</button>
+                                <button class="therichpost-button therichpost-red">Rejeitar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
+                            <td>Diogo Ferreira</td>
+                            <td><i>926789012</i></td>
+                            <td><i>dioferr@gmail.com</i></td>
+                            <td class="button-container">
+                                <button class="therichpost-button therichpost-blue">Validar</button>
+                                <button class="therichpost-button therichpost-red">Rejeitar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
+                            <td>Mariana Santos</td>
+                            <td><i>927890123</i></td>
+                            <td><i>santosana@gmail.com</i></td>
+                            <td class="button-container">
+                                <button class="therichpost-button therichpost-blue">Validar</button>
+                                <button class="therichpost-button therichpost-red">Rejeitar</button>
                             </td>
                         </tr>
                     </table>

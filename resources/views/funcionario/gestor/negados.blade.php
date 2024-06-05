@@ -47,8 +47,27 @@
     <table class="therichpost-table therichpost-striped therichpost-white">
         <tr>
             <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
+            <td>Ana Eva</td>
+            <td><i>925643331</i></td>
+            <td><i>evana@gmail.com</i></td>
+            <td class="button-container">
+            </td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
+            <td>Diogo Lopes</td>
+            <td><i>922339012</i></td>
+            <td><i>dioglopez@gmail.com</i></td>
+            <td class="button-container">
+            </td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
+            <td>Teca Leo</td>
+            <td><i>925590113</i></td>
+            <td><i>tec12@gmail.com</i></td>
+            <td class="button-container">
+            </td>
         </tr>
     </table>
 </div>

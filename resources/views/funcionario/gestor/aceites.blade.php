@@ -47,8 +47,27 @@
     <table class="therichpost-table therichpost-striped therichpost-white">
         <tr>
             <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
+            <td>Ana Costa</td>
+            <td><i>925678331</i></td>
+            <td><i>anacosta@gmail.com</i></td>
+            <td class="button-container">
+            </td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
+            <td>Diogo Cão</td>
+            <td><i>922789012</i></td>
+            <td><i>diogocao@gmail.com</i></td>
+            <td class="button-container">
+            </td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
+            <td>Maria Santos</td>
+            <td><i>925590123</i></td>
+            <td><i>mariasantos@gmail.com</i></td>
+            <td class="button-container">
+            </td>
         </tr>
     </table>
 </div>

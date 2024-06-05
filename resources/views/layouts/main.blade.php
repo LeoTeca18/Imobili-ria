@@ -2003,6 +2003,70 @@
         font-size: 16px;
         border-radius: 5px;
     }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .form-group textarea {
+        height: 100px;
+    }
+
+    .form-group button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .form-group button:hover {
+        background-color: #0056b3;
+    }
+
+    .form-container {
+        margin-top: 20px;
+        margin-right: 30px;
+        margin-left: 30px;
+        /* Ajuste o valor conforme necessário */
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .input-file {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .input-file:hover {
+        background-color: #0056b3;
+    }
+
+    input[type="file"] {
+        display: none;
+        /* Esconde o input padrão */
+    }
     </style>
 </head>
 

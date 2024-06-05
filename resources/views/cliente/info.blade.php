@@ -7,11 +7,39 @@
     <title>Imobiliária Imotec</title>
     <link rel="stylesheet" href="css/home.css">
 </head>
+<style>
+header.a {
+    background-color: black;
+    color: white;
+}
+
+header.a nav ul li a {
+    color: white;
+}
+
+.link-list {
+    color: black;
+    text-decoration: none;
+}
+
+.link-list a {
+    color: black;
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+</style>
 
 <body>
 
-    <header>
-        <h1>Imobiliária Imotec</h1>
+    <header class="a">
+        <a href="cliente">
+            <h1>Imobiliária Imotec</h1>
+        </a>
         <p>Bem-vindo à nossa imobiliária</p>
         <nav>
             <ul>
@@ -24,8 +52,8 @@
             </ul>
         </nav>
     </header>
-    <div class="banner">
-        <img src="img/imotec.jpg" alt="Descrição da imagem" width="1263" height="300">
+    <div class="b">
+        <img src="img/imotec.jpg" alt="Descrição da imagem" width="1263" height="500">
     </div>
     <div class="container">
         <h2>Propriedade 1</h2>

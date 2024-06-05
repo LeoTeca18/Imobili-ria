@@ -48,14 +48,34 @@
         <h5><b><i class="fa fa-dashboard"></i>Visitas Agendadas</b></h5>
     </header>
     <table class="therichpost-table therichpost-striped therichpost-white">
-        <tr>
-            <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
-            <td class="button-container">
-                <button class="therichpost-button therichpost-blue">Cancelar</button>
-            </td>
-        </tr>
+        <thead>
+            <tr>
+                <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
+                <th>Imóvel</th>
+                <th>Estado</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                <td>Apartamento</td>
+                <td>Ativa</td>
+                <td>2024-05-03</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                <td>Casa</td>
+                <td>Desativa</td>
+                <td>2024-03-03</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                <td>Comercial</td>
+                <td>Ativa</td>
+                <td>2024-06-03</td>
+            </tr>
+        </tbody>
     </table>
 </div>
 </div>

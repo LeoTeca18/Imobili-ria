@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imobiliária Imotec</title>
-    <link rel="stylesheet" href="css/home.css">
-</head>
+@extends('layouts.home')
+@section('estilo')
 
 <body>
 
-    <header>
-        <h1>Imobiliária Imotec</h1>
+    <header class="a">
+        <a href="login">
+            <h1>Imobiliária Imotec</h1>
+        </a>
         <p>Bem-vindo à nossa imobiliária</p>
         <nav>
             <ul>
@@ -24,10 +19,14 @@
             </ul>
         </nav>
     </header>
-    <div class="banner">
-        <img src="img/imotec.jpg" alt="Descrição da imagem" width="1263" height="300">
+    <div class="b">
+        <img src="img/imotec.jpg" alt="Descrição da imagem" width="1263" height="500">
     </div>
-
+    <!-- Barra de pesquisa -->
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar propriedades...">
+        <button type="button">Pesquisar</button>
+    </div>
     <div class="container">
         <h2>Propriedades em Destaque</h2>
         <div class="property-list">
@@ -36,8 +35,16 @@
                 <div class="details">
                     <h2>Propriedade 1</h2>
                     <p>5.800.000 Kz</p>
-                    <ul class="social-icons">
-                        <li><a href="login" class="botao-laranja">+ Ver Mais</a></li>
+                    <ul>
+                        <a href="login" class="botao-laranja">Ver Mais</a>
+                        <br>
+                        <a href="login" class="link-list">+ Comprar</a>
+                        <br>
+                        <a href="login" class="link-list">+ Reservar</a>
+                        <br>
+                        <a href="login" class="link-list">+ Agendar Visita</a>
+                        <br>
+                        <a href="login" class="link-list">+ Alugar</a>
                     </ul>
                 </div>
             </div>
@@ -46,8 +53,16 @@
                 <div class="details">
                     <h2>Propriedade 2</h2>
                     <p>10.000.000 Kz</p>
-                    <ul class="social-icons">
-                        <li><a href="login" class="botao-laranja">+ Ver Mais</a></li>
+                    <ul>
+                        <a href="login" class="botao-laranja">Ver Mais</a>
+                        <br>
+                        <a href="login" class="link-list">+ Comprar</a>
+                        <br>
+                        <a href="login" class="link-list">+ Reservar</a>
+                        <br>
+                        <a href="login" class="link-list">+ Agendar Visita</a>
+                        <br>
+                        <a href="login" class="link-list">+ Alugar</a>
                     </ul>
                 </div>
             </div>
@@ -56,8 +71,16 @@
                 <div class="details">
                     <h2>Propriedade 3</h2>
                     <p>4.600.000 Kz</p>
-                    <ul class="social-icons">
-                        <li><a href="login" class="botao-laranja">+ Ver Mais</a></li>
+                    <ul>
+                        <a href="login" class="botao-laranja">Ver Mais</a>
+                        <br>
+                        <a href="login" class="link-list">+ Comprar</a>
+                        <br>
+                        <a href="login" class="link-list">+ Reservar</a>
+                        <br>
+                        <a href="login" class="link-list">+ Agendar Visita</a>
+                        <br>
+                        <a href="login" class="link-list">+ Alugar</a>
                     </ul>
                 </div>
             </div>
@@ -68,9 +91,4 @@
             <a href="login" class="botao-laranja">Ver Propriedades</a>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2024 Imobiliária Imotec. Todos os direitos reservados.</p>
-    </footer>
-</body>
-
-</html>
+    @endsection

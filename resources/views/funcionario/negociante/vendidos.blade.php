@@ -28,6 +28,10 @@
                 class="fa fa-home fa-fw"></i>Imóveis Vendidos</a>
         <a href="alugadosN" class="therichpost-bar-item therichpost-button therichpost-padding"><i
                 class="fa fa-home fa-fw"></i>Imóveis Alugados</a>
+        <a href="reservasN" class="therichpost-bar-item therichpost-button therichpost-padding "><i
+                class="fa fa-home fa-fw"></i>Imóveis Reservados</a>
+        <a href="visitaN" class="therichpost-bar-item therichpost-button therichpost-padding "><i
+                class="fa fa-home fa-fw"></i>Visitas Agendadas</a>
         <a href="login" class="therichpost-bar-item therichpost-button therichpost-padding">
             <i class="fa fa-times fa-fw"></i>
             Logout
@@ -44,11 +48,42 @@
         <h5><b><i class="fa fa-dashboard"></i>Imóveis Vendidos</b></h5>
     </header>
     <table class="therichpost-table therichpost-striped therichpost-white">
-        <tr>
-            <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
-        </tr>
+        <thead>
+            <tr>
+                <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
+                <th>Tipo</th>
+                <th>Bairro</th>
+                <th>Área</th>
+                <th>Preço</th>
+                <th>Rua</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                <td>Apartamento</td>
+                <td>Centro</td>
+                <td>160 m²</td>
+                <td>550.000 Kz</td>
+                <td>Av. Paulista</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                <td>Casa</td>
+                <td>Vila Mariana</td>
+                <td>200 m²</td>
+                <td>1.250.000 Kz</td>
+                <td>Rua Domingos</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                <td>Comercial</td>
+                <td>Jardins</td>
+                <td>400 m²</td>
+                <td>4.000.000 Kz</td>
+                <td>Rua Augusta</td>
+            </tr>
+        </tbody>
     </table>
 </div>
 </div>

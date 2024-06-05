@@ -24,7 +24,7 @@
         <h5><a href="proprietario">Dashboard</h5>
     </div>
     <div class="therichpost-bar-block">
-        <a href="#" class="therichpost-bar-item therichpost-button therichpost-padding"><i
+        <a href="adicionar" class="therichpost-bar-item therichpost-button therichpost-padding"><i
                 class="fa fa-home fa-fw"></i>Adicionar Imóvel</a>
         <a href="vendidosP" class="therichpost-bar-item therichpost-button therichpost-padding"><i
                 class="fa fa-home fa-fw"></i>Imóveis Vendidos</a>
@@ -74,11 +74,66 @@
                 <div class="therichpost-twothird">
                     <h5>Imóveis</h5>
                     <table class="therichpost-table therichpost-striped therichpost-white">
-                        <tr>
-                            <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                            <td>New record, over 90 views.</td>
-                            <td><i>10 mins</i></td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
+                                <th>Tipo</th>
+                                <th>Bairro</th>
+                                <th>Área</th>
+                                <th>Preço</th>
+                                <th>Rua</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Apartamento</td>
+                                <td>Centro</td>
+                                <td>120 m²</td>
+                                <td>500.000 Kz</td>
+                                <td>Av. Paulista</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Casa</td>
+                                <td>Vila Mariana</td>
+                                <td>200 m²</td>
+                                <td>1.200.000 Kz</td>
+                                <td>Rua Domingos</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Comercial</td>
+                                <td>Jardins</td>
+                                <td>300 m²</td>
+                                <td>3.000.000 Kz</td>
+                                <td>Rua Augusta</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Apartamento</td>
+                                <td>Moema</td>
+                                <td>100 m²</td>
+                                <td>700.000 Kz</td>
+                                <td>Alameda Santos</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Casa</td>
+                                <td>Pinheiros</td>
+                                <td>150 m²</td>
+                                <td>900.000 Kz</td>
+                                <td>Rua dos Pinheiros</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Comercial</td>
+                                <td>Bela Vista</td>
+                                <td>250 m²</td>
+                                <td>2.500.000 Kz</td>
+                                <td>Rua da Consolação</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>

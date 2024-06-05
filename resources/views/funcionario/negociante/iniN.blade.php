@@ -28,6 +28,10 @@
                 class="fa fa-home fa-fw"></i>Imóveis Vendidos</a>
         <a href="alugadosN" class="therichpost-bar-item therichpost-button therichpost-padding"><i
                 class="fa fa-home fa-fw"></i>Imóveis Alugados</a>
+        <a href="reservasN" class="therichpost-bar-item therichpost-button therichpost-padding "><i
+                class="fa fa-home fa-fw"></i>Imóveis Reservados</a>
+        <a href="visitaN" class="therichpost-bar-item therichpost-button therichpost-padding"><i
+                class="fa fa-home fa-fw"></i>Visitas Agendadas</a>
         <a href="login" class="therichpost-bar-item therichpost-button therichpost-padding">
             <i class="fa fa-times fa-fw"></i>
             Logout
@@ -51,7 +55,8 @@
                     <h3>52</h3>
                 </div>
                 <div class="therichpost-clear"></div>
-                <h4><a href="vendidosN">Imóveis Vendidos</h4>
+                <h4><a href="vendidosN">Imóveis Vendidos</a>
+                </h4>
             </div>
         </div>
         <div class="therichpost-quarter">
@@ -61,7 +66,8 @@
                     <h3>99</h3>
                 </div>
                 <div class="therichpost-clear"></div>
-                <h4><a href="alugadosN">Imóveis Alugados</h4>
+                <h4><a href="alugadosN">Imóveis Alugados</a>
+                </h4>
             </div>
         </div>
         <div class="therichpost-panel">
@@ -69,15 +75,91 @@
                 <div class="therichpost-twothird">
                     <h5>Imóveis</h5>
                     <table class="therichpost-table therichpost-striped therichpost-white">
-                        <tr>
-                            <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                            <td>New record, over 90 views.</td>
-                            <td><i>10 mins</i></td>
-                            <td class="button-container">
-                                <button class="therichpost-button therichpost-blue">Vender</button>
-                                <button class="therichpost-button therichpost-blue">Alugar</button>
-                            </td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
+                                <th>Tipo</th>
+                                <th>Bairro</th>
+                                <th>Área</th>
+                                <th>Preço</th>
+                                <th>Rua</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Apartamento</td>
+                                <td>Centro</td>
+                                <td>120 m²</td>
+                                <td>500.000 Kz</td>
+                                <td>Av. Paulista</td>
+                                <td class="button-container">
+                                    <button class="therichpost-button therichpost-red">Vender</button>
+                                    <button class="therichpost-button therichpost-blue">Alugar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Casa</td>
+                                <td>Vila Mariana</td>
+                                <td>200 m²</td>
+                                <td>1.200.000 Kz</td>
+                                <td>Rua Domingos</td>
+                                <td class="button-container">
+                                    <button class="therichpost-button therichpost-red">Vender</button>
+                                    <button class="therichpost-button therichpost-blue">Alugar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Comercial</td>
+                                <td>Jardins</td>
+                                <td>300 m²</td>
+                                <td>3.000.000 Kz</td>
+                                <td>Rua Augusta</td>
+                                <td class="button-container">
+                                    <button class="therichpost-button therichpost-red">Vender</button>
+                                    <button class="therichpost-button therichpost-blue">Alugar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Apartamento</td>
+                                <td>Moema</td>
+                                <td>100 m²</td>
+                                <td>700.000 Kz</td>
+                                <td>Alameda Santos</td>
+                                <td class="button-container">
+                                    <button class="therichpost-button therichpost-red">Vender</button>
+                                    <button class="therichpost-button therichpost-blue">Alugar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Casa</td>
+                                <td>Pinheiros</td>
+                                <td>150 m²</td>
+                                <td>900.000 Kz</td>
+                                <td>Rua dos Pinheiros</td>
+                                <td class="button-container">
+                                    <button class="therichpost-button therichpost-red">Vender</button>
+                                    <button class="therichpost-button therichpost-blue">Alugar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                                <td>Comercial</td>
+                                <td>Bela Vista</td>
+                                <td>250 m²</td>
+                                <td>2.500.000 Kz</td>
+                                <td>Rua da Consolação</td>
+                                <td class="button-container">
+                                    <button class="therichpost-button therichpost-red">Vender</button>
+                                    <button class="therichpost-button therichpost-blue">Alugar</button>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
