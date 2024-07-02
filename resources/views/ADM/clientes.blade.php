@@ -21,18 +21,14 @@
     </div>
     <hr>
     <div class="therichpost-container">
-        <h5><a href="iniN">Dashboard</h5>
+        <h5><a href="iniA">Dashboard</h5>
     </div>
     <div class="therichpost-bar-block">
-        <a href="vendidosN" class="therichpost-bar-item therichpost-button therichpost-padding therichpost-blue"><i
-                class="fa fa-home fa-fw"></i>Imóveis Vendidos</a>
-        <a href="alugadosN" class="therichpost-bar-item therichpost-button therichpost-padding"><i
-                class="fa fa-home fa-fw"></i>Imóveis Alugados</a>
-        <a href="reservasN" class="therichpost-bar-item therichpost-button therichpost-padding "><i
-                class="fa fa-home fa-fw"></i>Imóveis Reservados</a>
-        <a href="visitaN" class="therichpost-bar-item therichpost-button therichpost-padding "><i
-                class="fa fa-home fa-fw"></i>Visitas Agendadas</a>
-        <a href="login" class="therichpost-bar-item therichpost-button therichpost-padding">
+        <a href="clientes" class="therichpost-bar-item therichpost-button therichpost-padding therichpost-blue"><i
+                class=" fa fa-users fa-fw"></i>Listar Clientes</a>
+        <a href="imoveis" class="therichpost-bar-item therichpost-button therichpost-padding"><i
+                class="fa fa-users fa-fw"></i>Listar Imóveis</a>
+             <a href="#" class="therichpost-bar-item therichpost-button therichpost-padding">
             <i class="fa fa-times fa-fw"></i>
             Logout
         </a><br><br>
@@ -45,31 +41,30 @@
 <div class="therichpost-main" style="margin-left:300px;margin-top:43px;">
     <!-- Header -->
     <header class="therichpost-container" style="padding-top:22px">
-        <h5><b><i class="fa fa-dashboard"></i>Imóveis Vendidos</b></h5>
+        <h5><b><i class="fa fa-dashboard"></i>Clientes</b></h5>
     </header>
     <table class="therichpost-table therichpost-striped therichpost-white">
         <thead>
             <tr>
-                <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
-                <th>Data</th>
-                <th>Cliente</th>
-                <th>Funcionário</th>
-                <th>Imóvel</th>
+                <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>
+                <th>Nome</th>
+                <th>Contacto</th>
+                <th>Email</th>
+                 <th>Tipo</th>
             </tr>
         </thead>
         <tbody>
-            @foreach($compras as $compra)
+            @foreach($clientes as $cliente)
             <tr>
-            <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>         
-                <td>{{ $compra->data }}</td>
-                <td>{{ $compra->cliente->nome }}</td>
-                <td>{{ $compra->funcionario->nome }}</td>
-                <td>{{ $compra->id_imovel }}</td>
+                <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>
+                <td>{{ $cliente->nome }}</td>
+                <td>{{ $cliente->contacto }}</td>
+                <td>{{ $cliente->email }}</td>
+                <td>{{ $cliente->tipo }}</td>
             </tr>
             @endforeach
-        </tbody>
+           </tbody>
     </table>
-    </div>
 </div>
 </div>
 </div>

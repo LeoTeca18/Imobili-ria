@@ -21,7 +21,7 @@
     </div>
     <hr>
     <div class="therichpost-container">
-        <h5><a href="proprietario">Dashboard</h5>
+        <h5><a href="iniP">Dashboard</h5>
     </div>
     <div class="therichpost-bar-block">
         <a href="adicionar" class="therichpost-bar-item therichpost-button therichpost-padding therichpost-blue"><i

@@ -21,7 +21,7 @@
     </div>
     <hr>
     <div class="therichpost-container">
-        <h5> <a href="proprietario">Dashboard</h5>
+        <h5> <a href="iniP">Dashboard</h5>
     </div>
     <div class="therichpost-bar-block">
         <a href="adicionar" class="therichpost-bar-item therichpost-button therichpost-padding"><i
@@ -49,41 +49,25 @@
         <thead>
             <tr>
                 <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
-                <th>Tipo</th>
-                <th>Bairro</th>
-                <th>Área</th>
-                <th>Preço</th>
-                <th>Rua</th>
+                <th>Data</th>
+                <th>Cliente</th>
+                <th>Funcionário</th>
+                <th>Imóvel</th>
             </tr>
         </thead>
         <tbody>
+            @foreach($compras as $compra)
             <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Apartamento</td>
-                <td>Centro</td>
-                <td>160 m²</td>
-                <td>550.000 Kz</td>
-                <td>Av. Paulista</td>
+            <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>         
+                <td>{{ $compra->data }}</td>
+                <td>{{ $compra->id_funcionario }}</td>
+                <td>{{ $compra->id_cliente }}</td>
+                <td>{{ $compra->id_imovel }}</td>
             </tr>
-            <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Casa</td>
-                <td>Vila Mariana</td>
-                <td>200 m²</td>
-                <td>1.250.000 Kz</td>
-                <td>Rua Domingos</td>
-            </tr>
-            <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Comercial</td>
-                <td>Jardins</td>
-                <td>400 m²</td>
-                <td>4.000.000 Kz</td>
-                <td>Rua Augusta</td>
-            </tr>
+            @endforeach
         </tbody>
     </table>
-</div>
+    </div>
 </div>
 </div>
 <hr>

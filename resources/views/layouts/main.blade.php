@@ -8,8 +8,10 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     @yield('estilo')
+
     <style>
     html,
     body,
@@ -2073,6 +2075,10 @@
         /* Define um tamanho máximo para o logotipo */
         height: auto;
         /* Mantém a proporção da imagem */
+    }
+
+    .scrollable-container {
+        overflow-x: auto;
     }
     </style>
 </head>

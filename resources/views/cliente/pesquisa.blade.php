@@ -1,5 +1,6 @@
 @extends('layouts.home')
 @section('estilo')
+
 <header class="a">
     <a href="cliente">
         <h1><img src="img/logo.png" class="logo" width="80" height="80">Imobiliária Imotec</h1>
@@ -10,7 +11,7 @@
             <!-- Botões de login e cadastro -->
             <li><a href="reservas">Listar Resevas</a></li>
             <li><a href="visita">Listar Visitas</a></li>
-            <li><a href="login">Login</a></li>
+            <li><a href="logout">Logout</a></li>
             <li><a href="alugadosC">Imóveis Alugados</a></li>
             <li><a href="comprados">Imóveis Comprados</a></li>
         </ul>
@@ -19,12 +20,16 @@
 <div class="b">
     <img src="img/imotec.jpg" alt="Descrição da imagem" width="1260" height="500">
 </div>
-<div class="c">
+<div class="container">
+    <!-- Barra de pesquisa -->
     <div class="search-bar">
-        <input type="text" placeholder="Pesquisar propriedades...">
-        <button type="button">Pesquisar</button>
+        <form action="{{ route('pesquisar.imovel') }}" method="GET">
+            <input type="text" name="query" placeholder="Digite para pesquisar..." value="{{ old('query', $query) }}">
+            <button type="submit">Pesquisar</button>
+        </form>
     </div>
-    <h2 class="text-center"> Propriedades</h2>
+    <h2>Resultados</h2>
+
     <div class="property-list">
         @foreach($terrenos as $terreno)
         <div class="property">
@@ -71,5 +76,9 @@
         </div>
         @endforeach
     </div>
-@endsection
-</html>
+    <br>
+    <div class="main-button text-center">
+        <a href="ver" class="botao-laranja">Ver Propriedades</a>
+    </div>
+
+    @endsection

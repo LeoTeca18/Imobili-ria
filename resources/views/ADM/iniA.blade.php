@@ -21,12 +21,14 @@
     </div>
     <hr>
     <div class="therichpost-container">
-        <h5><a href="iniG">Dashboard</h5>
+        <h5><a href="iniA">Dashboard</h5>
     </div>
     <div class="therichpost-bar-block">
-        <a href="aceites" class="therichpost-bar-item therichpost-button therichpost-padding"><i
-                class="fa fa-users fa-fw"></i>Pedidos Aceites</a>
-        <a href="#" class="therichpost-bar-item therichpost-button therichpost-padding">
+        <a href="clientes" class="therichpost-bar-item therichpost-button therichpost-padding"><i
+                class="fa fa-users fa-fw"></i>Listar Clientes</a>
+        <a href="imoveis" class="therichpost-bar-item therichpost-button therichpost-padding"><i
+                class="fa fa-users fa-fw"></i>Listar Imóveis</a>
+              <a href="#" class="therichpost-bar-item therichpost-button therichpost-padding">
             <i class="fa fa-times fa-fw"></i>
             Logout
         </a><br><br>
@@ -46,44 +48,73 @@
             <div class="therichpost-container therichpost-red therichpost-padding-16">
                 <div class="therichpost-left"><i class="fa fa-users therichpost-xxxlarge"></i></div>
                 <div class="therichpost-right">
-                    <h3>52</h3>
+                    <h3>{{ $totalC }}</h3>
                 </div>
                 <div class="therichpost-clear"></div>
-                <h4><a href="aceites">Pedidos Aceites</a>
+                <h4><a href="aceites">Clientes</a>
+                </h4>
+            </div>
+        </div>
+        <div class="therichpost-quarter">
+            <div class="therichpost-container therichpost-blue therichpost-padding-16">
+                <div class="therichpost-left"><i class="fa fa-home therichpost-xxxlarge"></i></div>
+                <div class="therichpost-right">
+                    <h3>{{ $totalI}}</h3>
+                </div>
+                <div class="therichpost-clear"></div>
+                <h4><a href="negados">Imóveis</a>
                 </h4>
             </div>
         </div>
         <div class="therichpost-panel">
             <div class="therichpost-row-padding" style="margin:0 -16px">
                 <div class="therichpost-twothird">
-                    <h5>Pedidos</h5>
+                    <h5>Funcionários</h5>
                     <table class="therichpost-table therichpost-striped therichpost-white" style="width: 900px">
                         <thead>
                             <tr>
                                 <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>
                                 <th>Nome</th>
-                                <th>Contacto</th>
+                                <th>Agência</th>
+                                <th>Cargo</th>
                                 <th>Email</th>
-                                <th>Acções</th>
+                                <th>Salário</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                    @foreach($funcionarios as $funcionario)
+                    <tr>
+                <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>
+                <td>{{ $funcionario->nome }}</td>
+                <td>{{ $funcionario->agencia->nome }}</td>
+                <td>{{ $funcionario->cargo }}</td>
+                <td>{{ $funcionario->email }}</td>
+                <td>{{ $funcionario->salario }}Kz</td>
+            </tr>
+            @endforeach
+            </tbody>
+            </table>
+            <br>
+                <h5>Agências</h5>
+                    <table class="therichpost-table therichpost-striped therichpost-white" style="width: 900px">
+                        <thead>
+                            <tr>
+                                <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Local</th>
                             </tr>
                         </thead>
                         <tbody>
-                           @foreach($proprietarios as $proprietario)
-                         <tr>
-                            <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>         
-                                <td>{{ $proprietario->nome }}</td>
-                                <td>{{ $proprietario->contacto }}</td>
-                                <td>{{ $proprietario->email }}</td>
-                                <td>
-                                <form method="POST" action="{{ route('validar.pedido', ['id' => $proprietario->id]) }}">
-                                    @csrf
-                                    @method('PUT')
-                                    <button type="submit" class="therichpost-button therichpost-blue">Validar</button>
-                                </form>
-                                </td>
-                         </tr>
-                        @endforeach
-                    </tbody>
+            @foreach($agencias as $agencia)
+            <tr>
+                <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>
+                <td>{{ $agencia->id }}</td>
+                <td>{{ $agencia->nome }}</td>
+                <td>{{ $agencia->local }}</td>
+            </tr>
+            @endforeach
+                        </tbody>
                     </table>
                 </div>
             </div>

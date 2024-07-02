@@ -21,7 +21,7 @@
     </div>
     <hr>
     <div class="therichpost-container">
-        <h5><a href="negociante">Dashboard</h5>
+        <h5><a href="iniN">Dashboard</h5>
     </div>
     <div class="therichpost-bar-block">
         <a href="vendidosN" class="therichpost-bar-item therichpost-button therichpost-padding"><i
@@ -51,38 +51,26 @@
         <thead>
             <tr>
                 <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
-                <th>Imóvel</th>
-                <th>Cliente</th>
-                <th>Estado</th>
                 <th>Data</th>
                 <th>Validade</th>
+                <th>Cliente</th>
+                <th>Funcionário</th>
+                <th>Imóvel</th>
+                <th>Estado</th>
             </tr>
         </thead>
         <tbody>
+            @foreach($reservas as $reserva)
             <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Apartamento</td>
-                <td>Leo Teca</td>
-                <td>Ativa</td>
-                <td>2024-05-03</td>
-                <td>2024-06-03</td>
+            <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>         
+                <td>{{ $reserva->data }}</td>
+                <td>{{ $reserva->validade }}</td>
+                <td>{{ $reserva->cliente->nome }}</td>
+                <td>{{ $reserva->funcionario->nome }}</td>
+                <td>{{ $reserva->id_imovel }}</td>
+                <td>{{ $reserva->estado }}</td>
             </tr>
-            <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Casa</td>
-                <td>Teca Leo</td>
-                <td>Desativa</td>
-                <td>2024-03-03</td>
-                <td>2024-05-03</td>
-            </tr>
-            <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Comercial</td>
-                <td>Edilson Teca</td>
-                <td>Ativa</td>
-                <td>2024-05-07</td>
-                <td>2024-06-03</td>
-            </tr>
+            @endforeach
         </tbody>
     </table>
 </div>

@@ -45,47 +45,106 @@
 <div class="therichpost-main" style="margin-left:300px;margin-top:43px;">
     <!-- Header -->
     <header class="therichpost-container" style="padding-top:22px">
-        <h5><b><i class="fa fa-dashboard"></i>Imóveis Comprados</b></h5>
+        <h5><b><i class="fa fa-dashboard"></i>Terrenos</b></h5>
     </header>
     <table class="therichpost-table therichpost-striped therichpost-white">
         <thead>
             <tr>
                 <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
-                <th>Tipo</th>
+                <th>Proprietario</th>
                 <th>Bairro</th>
                 <th>Área</th>
                 <th>Preço</th>
                 <th>Rua</th>
+                <th>Zona</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Apartamento</td>
+                <td>Leo</td>
                 <td>Centro</td>
                 <td>160 m²</td>
                 <td>550.000 Kz</td>
                 <td>Av. Paulista</td>
-            </tr>
-            <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Casa</td>
-                <td>Vila Mariana</td>
-                <td>200 m²</td>
-                <td>1.250.000 Kz</td>
-                <td>Rua Domingos</td>
-            </tr>
-            <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Comercial</td>
-                <td>Jardins</td>
-                <td>400 m²</td>
-                <td>4.000.000 Kz</td>
-                <td>Rua Augusta</td>
+                <td>Urbana</td>
             </tr>
         </tbody>
     </table>
-</div>
+    <br>
+    <header class="therichpost-container" style="padding-top:22px">
+        <h5><b><i class="fa fa-dashboard"></i>Apartamentos</b></h5>
+    </header>
+    <div class="scrollable-container">
+        <table class="therichpost-table therichpost-striped therichpost-white" style="width: 1500px">
+            <thead>
+                <tr>
+                    <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
+                    <th>Proprietário</th>
+                    <th>Bairro</th>
+                    <th>Área</th>
+                    <th>Preço</th>
+                    <th>Rua</th>
+                    <th>Ano de Construção</th>
+                    <th>Topologia</th>
+                    <th>Apartamento</th>
+                    <th>Edifício</th>
+                    <th>Andar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                    <td>Leo</td>
+                    <td>Centro</td>
+                    <td>160 m²</td>
+                    <td>550.000 Kz</td>
+                    <td>Av. Paulista</td>
+                    <td>2020</td>
+                    <td>T3</td>
+                    <td>60 m²</td>
+                    <td>50.000 Kz</td>
+                    <td>Av. Paulista</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <header class="therichpost-container" style="padding-top:22px">
+        <h5><b><i class="fa fa-dashboard"></i>Vivendas</b></h5>
+    </header>
+    <div class="scrollable-container">
+        <table class="therichpost-table therichpost-striped therichpost-white" style="width: 1500px">
+            <thead>
+                <tr>
+                    <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
+                    <th>Proprietário</th>
+                    <th>Bairro</th>
+                    <th>Área</th>
+                    <th>Preço</th>
+                    <th>Rua</th>
+                    <th>Ano de Construção</th>
+                    <th>Topologia</th>
+                    <th>Casa</th>
+                    <th>Andares</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
+                    <td>Leo</td>
+                    <td>Centro</td>
+                    <td>160 m²</td>
+                    <td>550.000 Kz</td>
+                    <td>Av. Paulista</td>
+                    <td>2020</td>
+                    <td>T3</td>
+                    <td>4</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 </div>
 <hr>

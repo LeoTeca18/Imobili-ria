@@ -21,7 +21,7 @@
     </div>
     <hr>
     <div class="therichpost-container">
-        <h5><a href="negociante">Dashboard</h5>
+        <h5><a href="iniN">Dashboard</h5>
     </div>
     <div class="therichpost-bar-block">
         <a href="vendidosN" class="therichpost-bar-item therichpost-button therichpost-padding"><i
@@ -32,7 +32,7 @@
                 class="fa fa-home fa-fw"></i>Imóveis Reservados</a>
         <a href="visitaN" class="therichpost-bar-item therichpost-button therichpost-padding"><i
                 class="fa fa-home fa-fw"></i>Visitas Agendadas</a>
-        <a href="login" class="therichpost-bar-item therichpost-button therichpost-padding">
+        <a href="logout" class="therichpost-bar-item therichpost-button therichpost-padding">
             <i class="fa fa-times fa-fw"></i>
             Logout
         </a><br><br>
@@ -73,94 +73,125 @@
         <div class="therichpost-panel">
             <div class="therichpost-row-padding" style="margin:0 -16px">
                 <div class="therichpost-twothird">
-                    <h5>Imóveis</h5>
-                    <table class="therichpost-table therichpost-striped therichpost-white" style="width: 900px">
-                        <thead>
-                            <tr>
-                                <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
-                                <th>Tipo</th>
-                                <th>Bairro</th>
-                                <th>Área</th>
-                                <th>Preço</th>
-                                <th>Rua</th>
-                                <th>Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                                <td>Apartamento</td>
-                                <td>Centro</td>
-                                <td>120 m²</td>
-                                <td>500.000 Kz</td>
-                                <td>Av. Paulista</td>
-                                <td class="button-container">
-                                    <button class="therichpost-button therichpost-red">Vender</button>
-                                    <button class="therichpost-button therichpost-blue">Alugar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                                <td>Casa</td>
-                                <td>Vila Mariana</td>
-                                <td>200 m²</td>
-                                <td>1.200.000 Kz</td>
-                                <td>Rua Domingos</td>
-                                <td class="button-container">
-                                    <button class="therichpost-button therichpost-red">Vender</button>
-                                    <button class="therichpost-button therichpost-blue">Alugar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                                <td>Comercial</td>
-                                <td>Jardins</td>
-                                <td>300 m²</td>
-                                <td>3.000.000 Kz</td>
-                                <td>Rua Augusta</td>
-                                <td class="button-container">
-                                    <button class="therichpost-button therichpost-red">Vender</button>
-                                    <button class="therichpost-button therichpost-blue">Alugar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                                <td>Apartamento</td>
-                                <td>Moema</td>
-                                <td>100 m²</td>
-                                <td>700.000 Kz</td>
-                                <td>Alameda Santos</td>
-                                <td class="button-container">
-                                    <button class="therichpost-button therichpost-red">Vender</button>
-                                    <button class="therichpost-button therichpost-blue">Alugar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                                <td>Casa</td>
-                                <td>Pinheiros</td>
-                                <td>150 m²</td>
-                                <td>900.000 Kz</td>
-                                <td>Rua dos Pinheiros</td>
-                                <td class="button-container">
-                                    <button class="therichpost-button therichpost-red">Vender</button>
-                                    <button class="therichpost-button therichpost-blue">Alugar</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                                <td>Comercial</td>
-                                <td>Bela Vista</td>
-                                <td>250 m²</td>
-                                <td>2.500.000 Kz</td>
-                                <td>Rua da Consolação</td>
-                                <td class="button-container">
-                                    <button class="therichpost-button therichpost-red">Vender</button>
-                                    <button class="therichpost-button therichpost-blue">Alugar</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h5>Terrenos</h5>
+                    <div class="scrollable-container" style="width : 900px">
+                        <table class="therichpost-table therichpost-striped therichpost-white">
+                            <thead>
+                                <tr>
+                                    <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
+                                    <th>Proprietário</th>
+                                    <th>Bairro</th>
+                                    <th>Área</th>
+                                    <th>Preço</th>
+                                    <th>Rua</th>
+                                    <th>Zona</th>
+                                    <th>Acções</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    @foreach($terrenos as $terreno)
+                                    <tr>
+                                        <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
+                                        <td>{{ $terreno->cliente->nome }}</td>
+                                        <td>{{ $terreno->bairro }}</td>
+                                        <td>{{ $terreno->area }}</td>
+                                        <td>{{ $terreno->preco }}</td>
+                                        <td>{{ $terreno->rua }}</td>
+                                         <td>{{ $terreno->zona }}</td>
+                                         <td class="button-container">
+                                            <button class="therichpost-button therichpost-red">Vender</button>
+                                            <button class="therichpost-button therichpost-blue">Alugar</button>
+                                        </td>
+                                    </tr>
+                                    @endforeach                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <h5>Apartamentos</h5>
+                    <div class="scrollable-container">
+                        <table class="therichpost-table therichpost-striped therichpost-white" style="width: 1500px;">
+                            <thead>
+                                <tr>
+                                    <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>
+                                    <th>Proprietário</th>
+                                    <th>Bairro</th>
+                                    <th>Área</th>
+                                    <th>Preço</th>
+                                    <th>Rua</th>
+                                    <th>Ano de Construção</th>
+                                    <th>Topologia</th>
+                                    <th>Apartamento</th>
+                                    <th>Edifício</th>
+                                    <th>Andar</th>
+                                    <th>Acções</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($apartamentos as $apartamento)
+                                <tr>
+                                    <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>
+                                    <td>{{ $apartamento->cliente->nome }}</td>
+                                    <td>{{ $apartamento->bairro }}</td>
+                                    <td>{{ $apartamento->area }}</td>
+                                    <td>{{ $apartamento->preco }}</td>
+                                    <td>{{ $apartamento->rua }}</td>
+                                    <td>{{ $apartamento->anoConstrucao }}</td>
+                                    <td>{{ $apartamento->topologia }}</td>
+                                    <td>{{ $apartamento->apartamento }}</td>
+                                    <td>{{ $apartamento->edificio }}</td>
+                                    <td>{{ $apartamento->andar }}</td>
+                                    <td class="button-container">
+                                        <button class="therichpost-button therichpost-red">Vender</button>
+                                        <button class="therichpost-button therichpost-blue">Alugar</button>
+                                    </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                        <h5>Vivendas</h5>
+                    <div class="scrollable-container">
+                        <table class="therichpost-table therichpost-striped therichpost-white" style="width: 1500px">
+                            <thead>
+                                <tr>
+                                    <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
+                                    <th>Proprietário</th>
+                                    <th>Bairro</th>
+                                    <th>Área</th>
+                                    <th>Preço</th>
+                                    <th>Rua</th>
+                                    <th>Ano de Construção</th>
+                                    <th>Topologia</th>
+                                    <th>Casa</th>
+                                    <th>Andares</th>
+                                    <th>Acções</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($vivendas as $vivenda)
+                                <tr>
+                                    <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>
+                                    <td>{{ $apartamento->cliente->nome }}</td>
+                                    <td>{{ $vivenda->bairro }}</td>
+                                    <td>{{ $vivenda->area }}</td>
+                                    <td>{{ $vivenda->preco }}</td>
+                                    <td>{{ $vivenda->rua }}</td>
+                                    <td>{{ $vivenda->anoConstrucao }}</td>
+                                    <td>{{ $vivenda->topologia }}</td>
+                                    <td>{{ $vivenda->casa }}</td>
+                                    <td>{{ $vivenda->andares }}</td>
+                                    <td class="button-container">
+                                        <button class="therichpost-button therichpost-red">Vender</button>
+                                        <button class="therichpost-button therichpost-blue">Alugar</button>
+                                    </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

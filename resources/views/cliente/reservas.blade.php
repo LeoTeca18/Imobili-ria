@@ -65,20 +65,6 @@
                 <td>2024-05-03</td>
                 <td>2024-06-03</td>
             </tr>
-            <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Casa</td>
-                <td>Desativa</td>
-                <td>2024-03-03</td>
-                <td>2024-05-03</td>
-            </tr>
-            <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Comercial</td>
-                <td>Ativa</td>
-                <td>2024-05-07</td>
-                <td>2024-06-03</td>
-            </tr>
         </tbody>
     </table>
 </div>

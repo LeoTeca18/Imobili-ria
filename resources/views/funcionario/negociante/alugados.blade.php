@@ -21,7 +21,7 @@
     </div>
     <hr>
     <div class="therichpost-container">
-        <h5><a href="negociante">Dashboard</h5>
+        <h5><a href="iniN">Dashboard</h5>
     </div>
     <div class="therichpost-bar-block">
         <a href="vendidosN" class="therichpost-bar-item therichpost-button therichpost-padding"><i
@@ -47,44 +47,29 @@
     <header class="therichpost-container" style="padding-top:22px">
         <h5><b><i class="fa fa-dashboard"></i>Imóveis Alugados</b></h5>
     </header>
-    <table class="therichpost-table therichpost-striped therichpost-white">
-        <thead>
-            <tr>
-                <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
-                <th>Tipo</th>
-                <th>Bairro</th>
-                <th>Área</th>
-                <th>Preço</th>
-                <th>Rua</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Apartamento</td>
-                <td>Centro</td>
-                <td>360 m²</td>
-                <td>250.000 Kz</td>
-                <td>Av. Paulista</td>
-            </tr>
-            <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Casa</td>
-                <td>Vila Mariana</td>
-                <td>200 m²</td>
-                <td>2.250.000 Kz</td>
-                <td>Rua Domingos</td>
-            </tr>
-            <tr>
-                <td><i class="fa fa-home therichpost-text-blue therichpost-large"></i></td>
-                <td>Comercial</td>
-                <td>Jardins</td>
-                <td>500 m²</td>
-                <td>5.000.000 Kz</td>
-                <td>Rua Augusta</td>
-            </tr>
-        </tbody>
-    </table>
+        <table class="therichpost-table therichpost-striped therichpost-white">
+            <thead>
+                <tr>
+                    <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>
+                    <th>Prazo</th>
+                    <th>Cliente</th>
+                    <th>Funcionário</th>
+                    <th>Imóvel</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($alugueres as $aluguer)
+                <tr>
+                <th><i class="fa fa-home therichpost-text-blue therichpost-large"></i></th>         
+                    <td>{{ $aluguer->prazo }}</td>
+                    <td>{{ $aluguer->cliente->nome }}</td>
+                    <td>{{ $aluguer->funcionario->nome }}</td>
+                    <td>{{ $aluguer->id_imovel }}</td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
 </div>
 </div>
 </div>

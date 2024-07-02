@@ -37,9 +37,17 @@ a {
 ul {
     list-style-type: none;
     padding: 0;
-
     align-items: center;
 }
+
+.link-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            list-style: none;
+        }
+
  </style>
 
  <body>

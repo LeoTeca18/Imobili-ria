@@ -53,28 +53,26 @@ a {
         </nav>
     </header>
     <div class="b">
-        <img src="img/imotec.jpg" alt="Descrição da imagem" width="1263" height="500">
+        <img src="img/imotec.jpg" alt="Descrição da imagem" width="1350" height="500">
     </div>
     <div class="container">
         <h2>Propriedade 1</h2>
         <div class="property-list">
             <div class="property">
-                <img src="img/casa1.jpg" alt="Propriedade 1">
-                <div class="details">
-                    <p>5.800.000 Kz</p>
-                </div>
-            </div>
+                <img src="/img/{{ $terreno->img }}" alt="{{ $terreno->nome }}">
+        <h2>{{ $terreno->nome }}</h2>
+        <p>Preço: {{ $terreno->preco }} Kz</p>
+        <p>Descrição: {{ $terreno->descricao }}</p>
+        <div class="actions">
+            <a href="#" class="botao-laranja">Ver Mais</a>
+            <a href="#" class="link-list">+ Comprar</a>
+            <a href="#" class="link-list">+ Reservar</a>
+            <a href="#" class="link-list">+ Agendar Visita</a>
+            <a href="#" class="link-list">+ Alugar</a>
         </div>
-        <p>Use a CSS framework or grid system: The current layout is quite basic and can be improved using a CSS
-            framework like Bootstrap or a grid system like CSS Grid.
-            Use a loop to generate repetitive HTML: The property list has many repetitive elements. Consider using a
-            JavaScript loop to generate the HTML dynamically.
-            Use a more semantic HTML structure: The current HTML structure can be improved by using more semantic
-            elements like section, article, and figure.
-            Add accessibility attributes: Add alt attributes to images and aria-label attributes to links to improve
-            accessibility.
-            Use a consistent naming convention: The CSS class names and HTML attributes use different naming
-            conventions. Stick to a consistent convention throughout the code.</p>
+        </div>
+        </div>
+        </div>
 </body>
 
 </html>

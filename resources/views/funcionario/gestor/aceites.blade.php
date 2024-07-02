@@ -1,5 +1,4 @@
 @extends('layouts.main')
-@extends('layouts.gestor')
 @section('estilo')
 
 <!-- Top container -->
@@ -22,13 +21,11 @@
     </div>
     <hr>
     <div class="therichpost-container">
-        <h5><a href="gestor">Dashboard</h5>
+        <h5><a href="iniG">Dashboard</h5>
     </div>
     <div class="therichpost-bar-block">
         <a href="aceites" class="therichpost-bar-item therichpost-button therichpost-padding therichpost-blue"><i
                 class="fa fa-users fa-fw"></i>Pedidos Aceites</a>
-        <a href="negados" class="therichpost-bar-item therichpost-button therichpost-padding"><i
-                class="fa fa-users fa-fw"></i>Pedidos Negados</a>
         <a href="#" class="therichpost-bar-item therichpost-button therichpost-padding">
             <i class="fa fa-times fa-fw"></i>
             Logout
@@ -45,30 +42,24 @@
         <h5><b><i class="fa fa-dashboard"></i>Pedidos Aceites</b></h5>
     </header>
     <table class="therichpost-table therichpost-striped therichpost-white">
+        <thead>
+            <tr>
+                <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>
+                <th>Nome</th>
+                <th>Contacto</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach($proprietarios as $proprietario)
         <tr>
-            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
-            <td>Ana Costa</td>
-            <td><i>925678331</i></td>
-            <td><i>anacosta@gmail.com</i></td>
-            <td class="button-container">
-            </td>
+        <th><i class="fa fa-users therichpost-text-blue therichpost-large"></i></th>         
+            <td>{{ $proprietario->nome }}</td>
+            <td>{{ $proprietario->contacto }}</td>
+            <td>{{ $proprietario->email }}</td>
         </tr>
-        <tr>
-            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
-            <td>Diogo Cão</td>
-            <td><i>922789012</i></td>
-            <td><i>diogocao@gmail.com</i></td>
-            <td class="button-container">
-            </td>
-        </tr>
-        <tr>
-            <td><i class="fa fa-user therichpost-text-blue therichpost-large"></i></td>
-            <td>Maria Santos</td>
-            <td><i>925590123</i></td>
-            <td><i>mariasantos@gmail.com</i></td>
-            <td class="button-container">
-            </td>
-        </tr>
+        @endforeach
+        </tbody>
     </table>
 </div>
 </div>
